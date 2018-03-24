@@ -6,9 +6,9 @@
 
 ### What Are Requests? Responses? Request/Response Pattern?
 #### - Request:
-Client Says Hi to the Server.
+Client (Maybe a Browser or a Mobile App...etc) Says Hi to the Server.
 ##### - - Api Request:
-A Peice of Code(The Client) Says Hi to the Server.
+A Peice of Code (The Client) Says Hi to the Server.
 #### - Response:
 The Server Says Hi Client, in Response to the (Hi) Sent by the Client.
 #### - Request/Response Pattern:

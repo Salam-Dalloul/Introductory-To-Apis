@@ -29,8 +29,18 @@ xhr;
 ### 1. What is HTTP?
 HyperText Transfer Protocol: A Mechanism/Protocol Used to Fire Requests to Fetch Some Data!
 
-### 2. Other Transfer Protocols: FTP, SMTP, IMAP, FTPS, HTTPS
-### 3. Request Methods : GET , POST , PUT , DELETE:
+### 2. Other Transfer Protocols:
+- FTP
+- SMTP
+- IMAP
+- FTPS
+- HTTPS
+
+### 3. Request Methods:
+- GET
+- POST
+- PUT
+- DELETE
 
 #### - GET:
 Used to Fetch Data, the URL Contains the Parameters That Specifies which Data to Fetch. EX: Search Requests.

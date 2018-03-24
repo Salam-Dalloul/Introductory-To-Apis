@@ -35,8 +35,7 @@ select('.search-btn')
   xhr.onreadystatechange = () => {
     if (xhr.readyState === 4 && xhr.status === 200) {
       const result = JSON.parse(xhr.responseText).data;
-      console.log(result);
-      Object.values(result).map((gif) => {
+      result.map((gif) => {
         const img = document.createElement('img');
         img.src = gif.images.preview_gif.url;
         resultsContainer.appendChild(img);

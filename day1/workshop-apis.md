@@ -18,7 +18,32 @@ https://api.github.com/users/{username}/repos?access_token={accessToken}
 6. Code your App:
 
 ```javascript
-//CODE!
 
+window.onload = gitHupApi;
+
+function fetch(url, callback) {
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      var response = JSON.parse(xhr.responseText);
+      callback(response);
+    }
+  }
+  xhr.open('GET', url)
+  xhr.send();
+}
+
+
+function gitHupApi () {
+  var url = 'https://api.github.com/users/salam-dalloul?access_token=7c2090850cc78c820a238f9f1c772f2540a07c60'
+  fetch(url, function (response) {
+   var repos = response.repos_url;
+   fetch(repos, function (response) {
+    var avatar_url = response[0].owner.avatar_url;
+    var img = document.getElementById('github-user-avatar');
+    img.src = avatar_url;
+   })
+  })
+}
 
 ```

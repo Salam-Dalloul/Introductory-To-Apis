@@ -1,6 +1,6 @@
 # Introductory Workshop:
 
-### NOTE : Install Google Chrome Extension - JSONView
+##### NOTE : Install Google Chrome Extension - JSONView
 
 ## 1. Request And Response Pattern:
 

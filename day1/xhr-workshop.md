@@ -4,7 +4,9 @@
 
 ### Steps:
 1. Signup and Greate an App
+
 2. Get API Key: GIhRwl1OBSFdW6jGmZoG41wsS1NgS2P7
+
 3. Go to DOCS - Get the Search End-Point Data:
 - - HOST: api.giphy.com
 - - PATH: /v1/gifs/search
@@ -14,7 +16,8 @@
 4. Build Your URL:
 - - http://api.giphy.com/v1/gifs/search?q={searchText}&api_key={apiKey}&limit={limit}
 
-5. Construct the Code: 
+5. Construct the Code:
+
 ``` javascript
 const select = (selector) => document.querySelector(selector)
 
